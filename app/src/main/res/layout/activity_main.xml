@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/textViewProperties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Właściwości czcionki"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#558B2F"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewSizeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rozmiar:"
+        android:textSize="18sp"/>
+
+    <SeekBar
+        android:id="@+id/fontSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="20"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dzień dobry"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/changeQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:textColor="@color/button_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/button_background_color" />
+
+</LinearLayout>
